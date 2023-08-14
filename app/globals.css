@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Montserrat";
+  src:
+    url('assets/fonts/Montserrat-Medium.ttf') format('truetype'),
+    url('assets/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+:root {
+  /* Color */
+  --color-foreground: #212121;
+  --color-background: #EEEEEE;
+
+  /* Typography */
+  --type-font: Montserrat;
+  --type-bold: 700;
+  --type-medium: 500;
+
+  /*  */
+  --margin-padding: 3em;
+  --grid-gap: 3em;
+  --grid-gap-list: 1em;
+}
+
+/* Mode dark */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-foreground: #EEEEEE;
+    --color-background: #212121;
+  }
+}
+
+/* margin, padding, etc */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* global  */
+body {
+  font-size: 12px;
+  font-family: var(--type-font);
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+
+  /* line-height: 1.4em; */
+  /* optional */
+
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  /* optional */
+}
+
+/* Disable default styles of main tags */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+button {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--type-bold);
+}
+
+/* list */
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* SVG */
+svg {
+  display: block;
+}
+
+svg path {
+  fill: currentColor;
+}
+
+/* Button */
+button {
+  cursor: pointer;
+  font-weight: var(--type-bold);
+  border: none;
+  color: var(--color-foreground);
+  background: transparent;
+}
+
+/* ul */
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--grid-gap-list)
+}
