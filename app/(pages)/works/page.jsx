@@ -20,11 +20,11 @@ export default function page() {
             <h1 style={{ marginBottom: '2em' }}>My Projects</h1>
             <ul style={{ gap: '2em' }}>
                 <li>
-                    <p style={{ marginBottom: '1em' }}>NARCOS API — <i>Colombia</i></p>
+                    <p style={{ marginBottom: '1em' }}>↗ NARCOS API — <i>Colombia</i></p>
                     <b style={{ opacity: '.5' }}>Creator</b>
                 </li>
                 <li>
-                    <p style={{ marginBottom: '1em' }}>My Fonts — <i>Colombia</i></p>
+                    <p style={{ marginBottom: '1em' }}>↗ My Fonts — <i>Colombia</i></p>
                     <b style={{ opacity: '.5' }}>Creator</b>
                 </li>
             </ul>
@@ -50,7 +50,9 @@ export default function page() {
                     <b style={{ opacity: '.5' }}>Isotipo</b>
                 </li>
                 <li>
-                    <p style={{ marginBottom: '1em' }}>Zura Group — <i>Colombia</i></p>
+                    <p style={{ marginBottom: '1em' }}>
+                        <a href="https://zuragroup.netlify.app" target="_bank">↗ Zura Group</a> — <i>Colombia</i>
+                    </p>
                     <b style={{ opacity: '.5' }}>Web Design</b>
                 </li>
             </ul>
