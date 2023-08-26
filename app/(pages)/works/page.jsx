@@ -2,9 +2,9 @@ import style from "./page.module.css";
 
 import { ButtonReturn } from "@/app/components/buttons/button_return";
 
-import img1 from '@/public/digital_art_1.jpg'
-import img2 from '@/public/digital_art_2.jpg'
-import img3 from '@/public/digital_art_3.jpg'
+import img1 from '@/public/digital_art_1.webp'
+import img2 from '@/public/digital_art_2.webp'
+import img3 from '@/public/digital_art_3.webp'
 
 export const metadata = {
     title: 'WORKS'
