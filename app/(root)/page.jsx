@@ -3,13 +3,13 @@ import Link from 'next/link'
 import style from './page.module.css'
 
 import { TimeLocal } from "../components/time_local";
+import CanvasModel from '../components/canvas/Canvas';
 
 export default function App() {
 
 	return <main className={style.main}>
 
 		<header className={style.header}>
-
 			<a href="/">
 				<svg style={{ width: "auto", height: "2em" }} viewBox="0 0 62 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<g>
@@ -23,7 +23,6 @@ export default function App() {
 					</defs>
 				</svg>
 			</a>
-
 			<nav>
 				<ul>
 					<li>
@@ -33,8 +32,9 @@ export default function App() {
 					</li>
 				</ul>
 			</nav>
-
 		</header>
+
+		<CanvasModel />
 
 		<footer className={style.footer}>
 			<section style={{ display: 'flex', flexDirection: 'column', gap: '3em' }}>
@@ -85,6 +85,7 @@ export default function App() {
 			</section>
 
 		</footer>
+
 
 	</main>
 }

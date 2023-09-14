@@ -1,16 +1,21 @@
 {
-  "name": "stivenstudio",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "13.4.13",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  }
+	"name": "stivenstudio",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@react-three/drei": "^9.83.1",
+		"@react-three/fiber": "^8.14.1",
+		"maath": "^0.7.0",
+		"next": "13.4.13",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"three": "^0.156.1",
+		"valtio": "^1.11.2"
+	}
 }
