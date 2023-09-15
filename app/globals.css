@@ -92,6 +92,9 @@ li {
 }
 
 /* a */
+a {
+	display: inline-block;
+}
 a:hover {
 	text-decoration: underline;
 }
@@ -105,7 +108,7 @@ svg path {
 	fill: currentColor;
 }
 
-/* Button */
+/* button */
 button {
 	cursor: pointer;
 	font-weight: var(--type-bold);
@@ -114,9 +117,24 @@ button {
 	background: transparent;
 }
 
+.btn-outline {
+	width: 100%;
+	border: 1px solid var(--color-foreground);
+	padding: .5rem 2rem;
+	border-radius: 6rem;
+}
+
 /* ul */
 ul {
 	display: flex;
 	flex-direction: column;
 	gap: var(--grid-gap-list)
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+	.btn-outline {
+		width: -moz-fit-content;
+		width: fit-content;
+	}
 }

@@ -26,7 +26,10 @@ export default function App() {
 			<nav>
 				<ul>
 					<li>
-						<Link href="works">
+						<Link
+							href="works"
+							className="btn-outline"
+						>
 							<b>WORKS</b>
 						</Link>
 					</li>
