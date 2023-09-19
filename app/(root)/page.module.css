@@ -18,8 +18,8 @@
 	gap: var(--grid-gap);
 	padding: var(--margin-padding);
 
-	/* background: linear-gradient(0deg, rgba(33, 33, 33, 1) 0%, rgba(33, 33, 33, 0) 100%); */
-	background: linear-gradient(0deg, rgba(33, 33, 33, 1) 0%, rgba(33, 33, 33, .7) 50%, rgba(33, 33, 33, 0) 100%);
+	
+	background: linear-gradient(0deg, rgba(var(--color-background-gradient), 1) 0%, rgba(var(--color-background-gradient), .7) 50%, rgba(var(--color-background-gradient), 0) 100%);
 }
 
 .footer__section__social,

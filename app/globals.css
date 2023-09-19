@@ -10,6 +10,8 @@
 	--color-foreground: #212121;
 	--color-background: #EEEEEE;
 
+	--color-background-gradient: 238, 238, 238;
+
 	/* Typography */
 	--type-font: Montserrat;
 	--type-bold: 700;
@@ -26,6 +28,8 @@
 	:root {
 		--color-foreground: #EEEEEE;
 		--color-background: #212121;
+
+		--color-background-gradient: 33, 33, 33;
 	}
 }
 
