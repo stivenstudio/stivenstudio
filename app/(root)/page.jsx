@@ -84,7 +84,7 @@ export default function App() {
 			</section>
 
 			<section className={style.footer__section__year}>
-				<b>©{new Date().getFullYear()}</b>
+				<b>© {new Date().getFullYear()}</b>
 			</section>
 
 		</footer>
