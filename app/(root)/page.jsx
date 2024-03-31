@@ -43,9 +43,9 @@ export default function App() {
 			<section style={{ display: 'flex', flexDirection: 'column', gap: '3em' }}>
 				<ul>
 					<h6>STIVEN STUDIO</h6>
-					<li>Digital Art</li>
 					<li>Web Design</li>
 					<li>Front-end Development</li>
+					<li><span className={style.footer_ul_android_soon}>Android Development</span> <span className={style.footer_android_soon}>SOON</span></li>
 				</ul>
 				<section>
 					<p>I'm stiven castro and I'm from Colombia.</p>

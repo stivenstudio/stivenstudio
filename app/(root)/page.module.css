@@ -22,6 +22,17 @@
 	background: linear-gradient(0deg, rgba(var(--color-background-gradient), 1) 0%, rgba(var(--color-background-gradient), .7) 50%, rgba(var(--color-background-gradient), 0) 100%);
 }
 
+.footer_ul_android_soon {
+	opacity: .5;	
+}
+.footer_android_soon {
+	border: 1px solid var(--color-foreground);
+	margin-left: .5rem;
+	padding: .1rem 1rem;
+	border-radius: 6rem;
+}
+
+
 .footer__section__social,
 .footer__section__social>section {
 	display: flex;
