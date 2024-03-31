@@ -1,11 +1,11 @@
 {
 	"dependencies": {
-		"@react-three/drei": "^9.83.1",
-		"@react-three/fiber": "^8.14.1",
-		"next": "13.4.13",
+		"@react-three/drei": "^9.103.0",
+		"@react-three/fiber": "^8.16.1",
+		"next": "14.1.4",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"three": "^0.156.1"
+		"three": "^0.163.0"
 	},
 	"name": "stivenstudio",
 	"private": true,
