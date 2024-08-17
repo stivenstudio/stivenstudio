@@ -17,6 +17,8 @@ export default function page() {
 		<section>
 			<h1>WORKS</h1>
 		</section>
+
+		{/* my projects */}
 		<section>
 			<h1 style={{ marginBottom: '2em' }}>My Projects</h1>
 			<ul style={{ gap: '2em' }}>
@@ -31,6 +33,8 @@ export default function page() {
 				</li>
 			</ul>
 		</section>
+
+		{/* dev projects */}
 		<section>
 			<h1 style={{ marginBottom: '2em' }}>Dev Projects</h1>
 			<ul style={{ gap: '2em' }}>
@@ -44,6 +48,8 @@ export default function page() {
 				</li>
 			</ul>
 		</section>
+
+		{/* design projects */}
 		<section>
 			<h1 style={{ marginBottom: '2em' }}>Design Projects</h1>
 			<ul style={{ gap: '2em' }}>
@@ -59,20 +65,19 @@ export default function page() {
 				</li>
 			</ul>
 		</section>
+
+		{/* digital art */}
 		<section>
 			<h1>DIGITAL ART</h1>
 		</section>
-		<section style={{ overflow: 'hidden', minHeight: '100px', borderRadius: "1rem" }}>
-			<img src={img1.src} loading="lazy" alt="Digital Art 1" style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'grayscale(1)' }} className={style.img} />
-			{/* <section style={{ overflow: 'hidden', minHeight: '100px' }}>
-                <Image priority src={img3} alt="Digital Art 3" style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'grayscale(1)' }} className={style.img} />
-            </section> */}
+		<section className={style.digital_art}>
+			<img src={img1.src} loading="lazy" alt="Digital Art 1" className={style.img} />
 		</section>
-		<section style={{ overflow: 'hidden', minHeight: '100px', borderRadius: "1rem" }}>
-			<img src={img2.src} loading="lazy" alt="Digital Art 2" style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'grayscale(1)' }} className={style.img} />
+		<section className={style.digital_art}>
+			<img src={img2.src} loading="lazy" alt="Digital Art 2" className={style.img} />
 		</section>
-		<section style={{ overflow: 'hidden', minHeight: '100px', borderRadius: "1rem" }}>
-			<img src={img3.src} loading="lazy" alt="Digital Art 3" style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'grayscale(1)' }} className={style.img} />
+		<section className={style.digital_art}>
+			<img src={img3.src} loading="lazy" alt="Digital Art 3" className={style.img} />
 		</section>
 		<div style={{ display: 'flex', alignItems: 'flex-end' }}>
 			<Link href="/" className="btn-outline">
