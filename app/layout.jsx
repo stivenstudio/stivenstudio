@@ -10,7 +10,12 @@ export const metadata = {
 	openGraph: {
 	    title: 'STIVEN STUDIO',
     	description: 'Digital art, Web Design, Front-end Development',
-		image: 'https://placehold.co/400'
+		images: [
+			{
+				url: 'https://placehold.co/400',
+				type: "image/png"
+			}
+		]
   	},
 	keywords: ['Web Design', 'Web Development', 'Freelancer'],
 	authors: [{ name: 'Stiven Castro' }],
