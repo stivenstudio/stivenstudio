@@ -10,7 +10,11 @@ export const metadata = {
 	keywords: ['Web Design', 'Web Development', 'Freelancer'],
 	authors: [{ name: 'Stiven Castro' }],
 	creator: 'Stiven Castro',
-	image: 'https://placehold.co/400'
+	openGraph: {
+	    title: 'STIVEN STUDIO',
+    	description: 'Digital art, Web Design, Front-end Development',
+   		image: 'https://placehold.co/400',
+  },
 }
 
 export default function RootLayout({ children }) {
