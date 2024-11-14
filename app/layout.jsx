@@ -6,7 +6,11 @@ export const metadata = {
 		default: 'STIVEN STUDIO',
 		template: "%s | STIVEN STUDIO"
 	},
-	description: 'Digital art, Web Design, Front-end Development'
+	description: 'Digital art, Web Design, Front-end Development',
+	keywords: ['Web Design', 'Web Development', 'Freelancer'],
+	authors: [{ name: 'Stiven Castro' }],
+	creator: 'Stiven Castro',
+	image: '/favicon.ico'
 }
 
 export default function RootLayout({ children }) {
