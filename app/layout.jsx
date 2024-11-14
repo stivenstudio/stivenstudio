@@ -7,20 +7,23 @@ export const metadata = {
 		template: "%s | STIVEN STUDIO"
 	},
 	description: 'Digital art, Web Design, Front-end Development',
-	keywords: ['Web Design', 'Web Development', 'Freelancer'],
-	authors: [{ name: 'Stiven Castro' }],
-	creator: 'Stiven Castro',
 	openGraph: {
 	    title: 'STIVEN STUDIO',
     	description: 'Digital art, Web Design, Front-end Development',
-   		image: 'https://placehold.co/400',
-  },
+  	},
+	keywords: ['Web Design', 'Web Development', 'Freelancer'],
+	authors: [{ name: 'Stiven Castro' }],
+	creator: 'Stiven Castro'
 }
 
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<head>
+				<meta 
+					property="og:image"
+					content="https://placehold.co/400"
+				/>
 				<Script
 					strategy='afterInteractive'
 					src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
