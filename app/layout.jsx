@@ -10,7 +10,7 @@ export const metadata = {
 	keywords: ['Web Design', 'Web Development', 'Freelancer'],
 	authors: [{ name: 'Stiven Castro' }],
 	creator: 'Stiven Castro',
-	image: '/favicon.ico'
+	image: 'https://placehold.co/400'
 }
 
 export default function RootLayout({ children }) {
