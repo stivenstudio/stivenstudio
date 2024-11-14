@@ -10,6 +10,7 @@ export const metadata = {
 	openGraph: {
 	    title: 'STIVEN STUDIO',
     	description: 'Digital art, Web Design, Front-end Development',
+		image: 'https://placehold.co/400'
   	},
 	keywords: ['Web Design', 'Web Development', 'Freelancer'],
 	authors: [{ name: 'Stiven Castro' }],
@@ -22,7 +23,7 @@ export default function RootLayout({ children }) {
 			<head>
 				<meta 
 					property="og:image"
-					content="https://placehold.co/400"
+					content=""
 				/>
 				<Script
 					strategy='afterInteractive'
