@@ -8,7 +8,7 @@ import img3 from '@/public/digital_art_3.webp'
 import Link from "next/link";
 
 export const metadata = {
-	title: 'WORKS'
+	title: 'Works'
 };
 
 export default function page() {
@@ -81,42 +81,9 @@ export default function page() {
 		</section>
 		<div style={{ display: 'flex', alignItems: 'flex-end' }}>
 			<Link href="/" className="btn-outline">
-				RETURN
+				<b>RETURN</b>
 			</Link>
 			{/* <ButtonReturn text={"← RETURN"} /> */}
 		</div>
 	</main>
-
-
-	// <main className={style.main}>
-	//     <ButtonReturn text={"← RETURN"} />
-	//     <ul className={style.ul__main}>
-	//         <li className={style.li__ul__main}>
-	//             <h1>ABOUT</h1>
-	//             <p>Hello! I'm Steven Castro, a passionate web developer from Popayan, Colombia. My goal is to create engaging and easy-to-use online experiences. Always in search of excellence and committed to learning and growing in the world of web development. Ready to turn ideas into digital reality!</p>
-	//         </li>
-	//         <li className={style.li__ul__main}>
-	//             <h1>NICHE</h1>
-	//             <ul>
-	//                 <li>Digital Art</li>
-	//                 <li>Web Design</li>
-	//                 <li>Front-end Development</li>
-	//             </ul>
-	//         </li>
-	//         <li className={style.li__ul__main}>
-	//             <h1>SOCIAL</h1>
-	//             <ul>
-	//                 <li>
-	//                     <a href='https://www.instagram.com/stiven.studio' target='_blank'>Instagram ↗</a>
-	//                 </li>
-	//                 <li>
-	//                     <a href='https://github.com/stivenstudio' target='_blank'>Github ↗</a>
-	//                 </li>
-	//                 <li>
-	//                     <a href='https://www.behance.net/stivenstudio' target='_blank'>Behance ↗</a>
-	//                 </li>
-	//             </ul>
-	//         </li>
-	//     </ul>
-	// </main>
 }

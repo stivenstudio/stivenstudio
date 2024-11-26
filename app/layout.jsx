@@ -3,20 +3,20 @@ import './globals.css'
 
 export const metadata = {
 	title: {
-		default: 'STIVEN STUDIO',
-		template: "%s | STIVEN STUDIO"
+		default: 'Stiven Studio',
+		template: "%s | Stiven Studio"
 	},
 	description: 'Digital art, Web Design, Front-end Development',
 	openGraph: {
-	    title: 'STIVEN STUDIO',
-    	description: 'Digital art, Web Design, Front-end Development',
+		title: 'Stiven Studio',
+		description: 'Digital art, Web Design, Front-end Development',
 		images: [
 			{
 				url: 'https://placehold.co/400',
 				type: "image/png"
 			}
 		]
-  	},
+	},
 	keywords: ['Web Design', 'Web Development', 'Freelancer'],
 	authors: [{ name: 'Stiven Castro' }],
 	creator: 'Stiven Castro'
