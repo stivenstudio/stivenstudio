@@ -1,14 +1,16 @@
 import Script from 'next/script'
 import './globals.css'
 
+const title = 'Stiven Studio'
+
 export const metadata = {
 	title: {
-		default: 'Stiven Studio',
-		template: "%s | Stiven Studio"
+		default: title,
+		template: "%s | " + title
 	},
 	description: 'Digital art, Web Design, Front-end Development',
 	openGraph: {
-		title: 'Stiven Studio',
+		title: title,
 		description: 'Digital art, Web Design, Front-end Development',
 		images: [
 			{
