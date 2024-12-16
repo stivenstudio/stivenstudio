@@ -24,7 +24,7 @@
 	--color-foreground: #212121;
 	--color-background: #FFFFFF;
 
-	--color-background-gradient: 238, 238, 238;
+	--color-background-tint: #EEEEEE;
 
 	/* Typography */
 	--type-font: Montserrat;
@@ -54,7 +54,7 @@
 		--color-foreground: #FFFFFF;
 		--color-background: #212121;
 
-		--color-background-gradient: 33, 33, 33;
+		--color-background-tint: #2b2b2b;
 	}
 }
 
@@ -125,10 +125,6 @@ a {
 	display: inline-block;
 }
 
-a:hover {
-	text-decoration: underline;
-}
-
 /* SVG */
 svg {
 	display: block;
@@ -139,10 +135,11 @@ svg path {
 }
 
 /* button */
-button, a.button {
+button,
+a.button {
 	cursor: pointer;
 	width: fit-content;
-	font-size: 1em;
+	font-size: 16px;
 	font-family: var(--type-font);
 	font-weight: var(--type-medium);
 	border: 1px solid transparent;
@@ -152,19 +149,20 @@ button, a.button {
 	border-radius: 50px;
 }
 
-button.outline {
+button.outline, a.outline {
 	border: 1px solid var(--color-foreground);
 	background: transparent;
 	color: var(--color-foreground);
 }
 
-button.small {
+button.small, a.small {
 	padding: var(--shape-8) var(--shape-16);
 }
 
-button.icon {
+button.icon, a.icon {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 	gap: var(--shape-8);
 }
 

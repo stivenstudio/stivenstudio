@@ -9,6 +9,8 @@ export default function App() {
 
 	return <main className={style.main}>
 
+		<div className={style.bg}></div>		
+
 		<Header />
 		<Hero />
 		<Projects />

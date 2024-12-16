@@ -18,7 +18,7 @@
 
 .hero_content_h1 {
 	text-wrap: balance;
-	font-size: var(--shape-64);
+	font-size: 64px;
 	font-weight: var(--type-medium);
 }
 

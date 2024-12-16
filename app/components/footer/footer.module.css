@@ -19,6 +19,12 @@
 	display: flex;
 	justify-content: space-between;
 	margin: var(--shape-16) 0;
+	font-size: 16px;
+
+	& a:hover {
+		text-decoration: underline;
+	}
+
 }
 
 .footer_copyright {
