@@ -31,13 +31,7 @@ function Loader() {
 
 const CanvasThreeModel = ({ modelPath }) => {
 	return (
-		<Canvas style={
-			{
-				position: 'fixed',
-				top: 0, bottom: 0, left: 0, right: 0,
-				zIndex: -1
-			}
-		}>
+		<Canvas>
 			<ambientLight intensity={0.5} />
 			<directionalLight position={[10, 10, 5]} intensity={1} />
 			<directionalLight position={[-10, -10, -5]} intensity={1} />
@@ -50,7 +44,7 @@ const CanvasThreeModel = ({ modelPath }) => {
 				/> */}
 				<PerspectiveCamera
 					makeDefault // Hace que esta cámara sea la cámara predeterminada
-					position={[0, 0, 5]} // posición de la cámara [x, z, y]
+					position={[0, 0, 2]} // posición de la cámara [x, z, y]
 					rotation={[0, 0, 0]} // rotación de la cámara [x, z, y]
 					fov={75} // Campo de visión
 					far={10} // Plano lejano

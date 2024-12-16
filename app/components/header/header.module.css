@@ -1,0 +1,11 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding-top: var(--shape-32);
+}
+
+.accessibility {
+	display: flex;
+	flex-direction: row;
+	gap: var(--shape-16);
+}
