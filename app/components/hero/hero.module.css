@@ -25,3 +25,12 @@
 .hero_content_p {
 	text-wrap: balance;
 }
+
+.hero_content_3d {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}

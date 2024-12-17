@@ -22,7 +22,7 @@ const Model = ({ path }) => {
 		}
 	})
 
-	return <primitive ref={ref} object={scene} />
+	return <primitive ref={ref} object={scene} position={[0, .5, 0]} />
 }
 
 function Loader() {
@@ -44,7 +44,7 @@ const CanvasThreeModel = ({ modelPath }) => {
 				/> */}
 				<PerspectiveCamera
 					makeDefault // Hace que esta cámara sea la cámara predeterminada
-					position={[0, 0, 1.5]} // posición de la cámara [x, z, y]
+					position={[0, 0, 5]} // posición de la cámara [x, z, y]
 					rotation={[0, 0, 0]} // rotación de la cámara [x, z, y]
 					fov={70} // Campo de visión
 					far={10} // Plano lejano
