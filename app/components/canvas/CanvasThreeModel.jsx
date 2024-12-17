@@ -33,8 +33,8 @@ const CanvasThreeModel = ({ modelPath }) => {
 	return (
 		<Canvas>
 			<ambientLight intensity={0.5} />
-			<directionalLight position={[10, 10, 5]} intensity={1} />
-			<directionalLight position={[-10, -10, -5]} intensity={1} />
+			{/* <directionalLight position={[10, 10, 5]} intensity={1} />
+			<directionalLight position={[-10, -10, -5]} intensity={1} /> */}
 			<Suspense fallback={<Loader />}>
 				{/* <OrbitControls
 					enableDamping={true} // default: true | Cuando sueltas el mouse continúa girando pero disminuye la velocidad
@@ -44,9 +44,9 @@ const CanvasThreeModel = ({ modelPath }) => {
 				/> */}
 				<PerspectiveCamera
 					makeDefault // Hace que esta cámara sea la cámara predeterminada
-					position={[0, 0, 2]} // posición de la cámara [x, z, y]
+					position={[0, 0, 1.5]} // posición de la cámara [x, z, y]
 					rotation={[0, 0, 0]} // rotación de la cámara [x, z, y]
-					fov={75} // Campo de visión
+					fov={70} // Campo de visión
 					far={10} // Plano lejano
 				/>
 				<Model path={modelPath} />
