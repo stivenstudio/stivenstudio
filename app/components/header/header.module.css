@@ -9,3 +9,14 @@
 	flex-direction: row;
 	gap: var(--shape-16);
 }
+
+/* responsive */
+@media screen and (max-width: 1440px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 425px) {
+	.header {
+		padding-top: var(--shape-16);
+	}
+}

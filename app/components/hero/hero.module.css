@@ -34,3 +34,27 @@
 	right: 0;
 	z-index: -1;
 }
+
+/* responsive */
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 768px) {
+	.hero_content_h1 {
+		font-size: 48px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.hero {
+		grid-template-columns: 1fr;
+	}
+
+	.hero_content_h1 {
+		font-size: 32px;
+	}
+
+	.hero_content_3d {
+		display: none;
+		visibility: hidden;
+	}
+}

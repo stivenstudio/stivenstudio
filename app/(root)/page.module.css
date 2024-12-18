@@ -18,6 +18,16 @@
 }
 
 /* responsive */
+@media screen and (max-width: 1440px) {
+	.main {
+		padding: 0 var(--shape-32);
+	}
+}
+
 @media screen and (max-width: 768px) {}
 
-@media screen and (max-width: 425px) {}
+@media screen and (max-width: 425px) {
+	.main {
+		padding: 0 var(--shape-16);
+	}
+}

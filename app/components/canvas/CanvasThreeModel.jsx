@@ -22,7 +22,7 @@ const Model = ({ path }) => {
 		}
 	})
 
-	return <primitive ref={ref} object={scene} position={[0, .5, 0]} />
+	return <primitive ref={ref} object={scene} position={[0, 0, 0]} />
 }
 
 function Loader() {

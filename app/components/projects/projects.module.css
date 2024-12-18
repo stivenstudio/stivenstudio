@@ -93,3 +93,36 @@
 	}
 
 }
+
+/* responsive */
+@media screen and (max-width: 1024px) {
+	.grid_logos {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.project {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	
+	.grid_logos {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.projects {
+		gap: var(--shape-96);
+	}
+
+	.project {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.grid_logos {
+		grid-template-columns: 1fr;
+	}
+}
