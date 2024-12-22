@@ -142,24 +142,33 @@ a.button {
 	font-size: 16px;
 	font-family: var(--type-font);
 	font-weight: var(--type-medium);
-	border: 1px solid transparent;
+	border: 1px solid var(--color-foreground);
 	background: var(--color-foreground);
 	color: var(--color-background);
 	padding: var(--shape-16) var(--shape-32);
 	border-radius: 50px;
+	transition: background 200ms ease-out, color 200ms ease-out;
+
+	&:hover {
+		background: var(--color-background);
+		color: var(--color-foreground);
+	}
 }
 
-button.outline, a.outline {
+button.outline,
+a.outline {
 	border: 1px solid var(--color-foreground);
 	background: transparent;
 	color: var(--color-foreground);
 }
 
-button.small, a.small {
+button.small,
+a.small {
 	padding: var(--shape-8) var(--shape-16);
 }
 
-button.icon, a.icon {
+button.icon,
+a.icon {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -182,6 +191,10 @@ ul {
 
 
 /* responsive */
+@media screen and (max-width: 425px) {
+	
+}
+
 @media screen and (max-width: 768px) {
 	.btn-outline {
 		width: -moz-fit-content;
