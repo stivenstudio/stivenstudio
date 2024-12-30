@@ -1,0 +1,29 @@
+[
+	{
+		"slug": "erp-platform",
+		"title": "ERP Platform",
+		"role": "Co-founder",
+		"description": "Desarrollo de una aplicación ERP enfocada en la gestión eficiente de tiendas y negocios, incluyendo módulos clave como inventarios, ventas y administración, colaborando en equipo para su diseño y funcionalidad.",
+		"url": "",
+		"cover": "erp_platform.webp",
+		"tech": "Software"
+	},
+	{
+		"slug": "innotech",
+		"title": "Innotech",
+		"role": "Own",
+		"description": "Explora nuestra plataforma, el líder en soluciones innovadoras. Redefinimos el modelo empresarial, ofreciendo una visión completa de su organización.",
+		"url": "https://innotech-co.vercel.app",
+		"cover": "innotech.webp",
+		"tech": "Web"
+	},
+	{
+		"slug": "narcos-api",
+		"title": "Narcos-api",
+		"role": "Own",
+		"description": "Prueba y prototipa con nuestra API falsa gratuita.",
+		"url": "https://narcos-api.vercel.app",
+		"cover": "narcos_api.webp",
+		"tech": "Web"
+	}
+]

@@ -1,0 +1,23 @@
+[
+	{
+		"slug": "ccc",
+		"title": "Copa Cauca Champions",
+		"tags": "Logo",
+		"description":"Es un proyecto orientado a promover e impulsar torneos de fútbol de salón, destacando valores como la **competitividad**, el **liderazgo** y **la pasión** por el deporte. Este logo representa la esencia del torneo, fusionando fuerza, elegancia y excelencia",
+		"cover": "ccc.webp"
+	},
+	{
+		"slug": "may",
+		"title": "MAY",
+		"tags": "Logo",
+		"description":"Es una marca de ropa enfocada en ofrecer diseños **modernos** y **exclusivos**, dirigidos a un público joven y apasionado por la moda. Este logo captura la esencia de la marca, combinando sofisticación y estilo dinámico.",
+		"cover": "may.webp"
+	},
+	{
+		"slug": "nogueracell",
+		"title": "Nogueracell",
+		"tags": "Logo",
+		"description":"Es un negocio dedicado a la venta de **equipos móviles**, diseño de carcasas **personalizadas**, y **accesorios** para celulares. Este logo fue diseñado pensando en resaltar la identidad de la marca de manera profesional y llamativa.",
+		"cover": "nogueracell.webp"
+	}
+]

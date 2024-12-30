@@ -1,16 +1,18 @@
 "use client"
 
-import { Suspense, useRef } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Suspense, useEffect, useRef, useState } from "react";
+import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { OrbitControls, PerspectiveCamera, Html, Environment, useGLTF } from "@react-three/drei";
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 const Model = ({ path }) => {
-	const { scene } = useGLTF(path)
+	const { scene } = useLoader(GLTFLoader, path)
+	// const { scene } = useGLTF(path)
 	const ref = useRef()
 
 	useFrame(() => {
 		if (ref.current) {
-			ref.current.rotation.y += 0.01
+			ref.current.rotation.y += 0.001
 		}
 	})
 
@@ -22,7 +24,7 @@ const Model = ({ path }) => {
 		}
 	})
 
-	return <primitive ref={ref} object={scene} position={[0, 0, 3]} />
+	return <primitive ref={ref} object={scene} position={[0, 0, 3.5]} />
 }
 
 function Loader() {
@@ -30,27 +32,39 @@ function Loader() {
 }
 
 const CanvasThreeModel = ({ modelPath }) => {
+
+	const [startLoding, setStartLoding] = useState(false)
+
+	useEffect(() => {
+		const timer = setTimeout(() => { setStartLoding(true) }, 1000) // Retraso de 1 segundo
+		return () => clearTimeout(timer) // limpiar el temporizador
+	}, [])
+
 	return (
 		<Canvas>
-			<ambientLight intensity={0.5} />
-			{/* <directionalLight position={[10, 10, 5]} intensity={1} />
-			<directionalLight position={[-10, -10, -5]} intensity={1} /> */}
 			<Suspense fallback={<Loader />}>
-				{/* <OrbitControls
+				{startLoding ? (
+					<>
+						<ambientLight intensity={0.5} />
+						{/* <directionalLight position={[10, 10, 5]} intensity={1} />
+				<directionalLight position={[-10, -10, -5]} intensity={1} /> */}
+						{/* <OrbitControls
 					enableDamping={true} // default: true | Cuando sueltas el mouse continúa girando pero disminuye la velocidad
 					enablePan={true}
 					enableRotate={true}
 					enableZoom={true}
 				/> */}
-				<PerspectiveCamera
-					makeDefault // Hace que esta cámara sea la cámara predeterminada
-					position={[0, 0, 5]} // posición de la cámara [x, z, y]
-					rotation={[0, 0, 0]} // rotación de la cámara [x, z, y]
-					fov={70} // Campo de visión
-					far={10} // Plano lejano
-				/>
-				<Model path={modelPath} />
-				<Environment preset="sunset" />
+						<PerspectiveCamera
+							makeDefault // Hace que esta cámara sea la cámara predeterminada
+							position={[0, 0, 5]} // posición de la cámara [x, z, y]
+							rotation={[0, 0, 0]} // rotación de la cámara [x, z, y]
+							fov={70} // Campo de visión
+							far={10} // Plano lejano
+						/>
+						<Model path={modelPath} />
+						<Environment preset="sunset" />
+					</>
+				) : null}
 			</Suspense>
 		</Canvas>
 	);

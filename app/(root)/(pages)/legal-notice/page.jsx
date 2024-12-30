@@ -1,31 +1,24 @@
-import Link from "next/link";
+import MarkdownRenderer from "@/app/components/reactMarkdown/markdown.renderer";
 
 import style from "./page.module.css";
 
-import Logo from "@/app/components/header/logo";
-
 export const metadata = {
-	title: 'Legal Notice'
+	title: 'Aviso Legal'
 };
 
 export default function page() {
 	return (
 		<main className={style.main}>
 
-			<br />
-
-			<Logo />
-
-			<Link href="/" className="button icon small outline">
-				<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="ffffff"><path d="m294.92-450 227.85 227.85L480-180 180-480l300-300 42.77 42.15L294.92-510H780v60H294.92Z" /></svg>
-				Volver
-			</Link>
-
 			<section className={style.section_legal_notice}>
 
 				<article className={style.legal_notice}>
-					<h1>Aviso Legal y Condiciones de Uso del Portafolio de Stiven Castro</h1>
-					<p>Este documento regula el uso del sitio web perteneciente a <b>Stiven Studio</b>, estableciendo los derechos y responsabilidades de los usuarios y del titular en relación al contenido presentado en el portafolio.</p>
+					<h1>Aviso Legal y Condiciones de Uso</h1>
+					<p>
+						<MarkdownRenderer content={
+							"Este documento regula el uso del sitio web perteneciente a **Stiven Studio**, estableciendo los derechos y responsabilidades de los usuarios y del titular en relación al contenido presentado en el portafolio."
+						} />
+					</p>
 				</article>
 
 				<div className="divider"></div>
@@ -33,7 +26,11 @@ export default function page() {
 				<ol>
 					<li>
 						<b>1. Titularidad y Propiedad Intelectual del Sitio Web</b>
-						<p>El sitio web, denominado <b>Stiven Studio</b> (https://stivenstudio.vercel.app), es propiedad exclusiva de <b>Stiven Studio</b>. Todo el contenido alojado en el Sitio, incluidos, pero no limitados a diseños, logotipos, imágenes, textos, código fuente y cualquier otro material creativo, está protegido por las leyes internacionales de derechos de autor.</p>
+						<p>
+							<MarkdownRenderer content={
+								"El sitio web, denominado **[Stiven Studio](https://stivenstudio.vercel.app)**, es propiedad exclusiva de *Stiven Castro*. Todo el contenido alojado en el Sitio, incluidos, pero no limitados a diseños, logotipos, imágenes, textos, código fuente y cualquier otro material creativo, está protegido por las leyes internacionales de derechos de autor."
+							} />
+						</p>
 					</li>
 					<li>
 						<b>2. Derechos de Autor y Uso del Contenido</b>
@@ -81,15 +78,7 @@ export default function page() {
 					</li>
 				</ol>
 
-				<div className="divider"></div>
-
-				<div className={style.social}>
-					<a href="https://github.com/stivenstudio" target="_blank" rel="noopener noreferrer">Github</a>
-					<a href="https://www.instagram.com/stiven.studio" target="_blank" rel="noopener noreferrer">Instagram</a>
-				</div>
-
 			</section>
-
 		</main >
 	)
 }

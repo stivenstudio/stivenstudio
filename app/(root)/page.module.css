@@ -1,11 +1,12 @@
 .main {
 	width: 100%;
-	max-width: 1504px;
+	max-width: 852px;
 	margin: auto;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	gap: calc(var(--shape-xxxl) * 2);
 }
 
 .bg {
@@ -18,16 +19,16 @@
 }
 
 /* responsive */
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px) {}
+
+@media screen and (max-width: 768px) {
 	.main {
-		padding: 0 var(--shape-32);
+		padding: 0 var(--shape-md);
 	}
 }
 
-@media screen and (max-width: 768px) {}
-
 @media screen and (max-width: 425px) {
 	.main {
-		padding: 0 var(--shape-16);
+		padding: 0 var(--shape-sm);
 	}
 }

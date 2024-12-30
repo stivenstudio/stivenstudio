@@ -17,5 +17,4 @@ export default function NotFound() {
 		<p>Page Not Found</p>
 		<Link href="/">← RETURN</Link>
 	</section>
-	
 }

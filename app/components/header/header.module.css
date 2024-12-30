@@ -1,13 +1,30 @@
-.header {
+.header,
+.accessibility,
+.logo_container,
+.logo_name {
 	display: flex;
+}
+
+.header {
+	flex-direction: row;
 	justify-content: space-between;
-	padding-top: var(--shape-32);
+	padding-top: var(--shape-md);
 }
 
 .accessibility {
-	display: flex;
-	flex-direction: row;
-	gap: var(--shape-16);
+	flex-direction: inherit;
+	gap: var(--shape-sm);
+}
+
+.logo_container {
+	align-items: center;
+	gap: var(--shape-xs)
+}
+
+.logo_name {
+	flex-direction: column;
+	font-weight: var(--type-bold);
+	line-height: var(--shape-sm);
 }
 
 /* responsive */
@@ -17,6 +34,6 @@
 
 @media screen and (max-width: 425px) {
 	.header {
-		padding-top: var(--shape-16);
+		padding-top: var(--shape-sm);
 	}
 }

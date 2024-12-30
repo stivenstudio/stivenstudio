@@ -25,6 +25,7 @@
 	--color-background: #FFFFFF;
 
 	--color-background-tint: #EEEEEE;
+	--color-border-tag: #E4E4E4;
 
 	/* Typography */
 	--type-font: Montserrat;
@@ -32,30 +33,40 @@
 	--type-medium: 500;
 	--type-regular: 400;
 
-	/*  */
-	--margin-padding: 3em;
-	--grid-gap: 3em;
-	--grid-gap-list: 1em;
-
 	/* Shape */
-	--shape-8: .5em;
-	--shape-16: 1em;
-	--shape-32: 2em;
-	--shape-48: 3em;
-	--shape-64: 4em;
-	--shape-80: 5em;
-	--shape-96: 6em;
+	/* 6px */
+	--shape-xs: .5em;
+	/* 12px */
+	--shape-sm: 1em;
+	/* 24px */
+	--shape-md: 2em;
+	/* 36px */
+	--shape-lg: 3em;
+	/* 48px */
+	--shape-xl: 4em;
+	/* 60px */
+	--shape-xxl: 5em;
+	/* 72px */
+	--shape-xxxl: 6em;
 
 }
 
 /* Mode dark */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	:root {
 		--color-foreground: #FFFFFF;
 		--color-background: #212121;
 
 		--color-background-tint: #2b2b2b;
 	}
+} */
+
+[data-theme='dark'] {
+	--color-foreground: #FFFFFF;
+	--color-background: #212121;
+
+	--color-background-tint: #2b2b2b;
+	--color-border-tag: #656565;
 }
 
 /* text selected */
@@ -75,10 +86,12 @@
 
 /* global  */
 body {
-	font-size: 20px;
+	font-size: 12px;
 	font-family: var(--type-font);
 	color: var(--color-foreground);
 	background-color: var(--color-background);
+
+	transition: background-color 300ms, color 300ms;
 
 	/* line-height: 1.4em; */
 	/* optional */
@@ -139,13 +152,13 @@ button,
 a.button {
 	cursor: pointer;
 	width: fit-content;
-	font-size: 16px;
+	font-size: 1em;
 	font-family: var(--type-font);
 	font-weight: var(--type-medium);
 	border: 1px solid var(--color-foreground);
 	background: var(--color-foreground);
 	color: var(--color-background);
-	padding: var(--shape-16) var(--shape-32);
+	padding: var(--shape-sm) var(--shape-md);
 	border-radius: 50px;
 	transition: background 200ms ease-out, color 200ms ease-out;
 
@@ -164,7 +177,7 @@ a.outline {
 
 button.small,
 a.small {
-	padding: var(--shape-8) var(--shape-16);
+	padding: var(--shape-xs) var(--shape-sm);
 }
 
 button.icon,
@@ -172,14 +185,23 @@ a.icon {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	gap: var(--shape-8);
+	gap: var(--shape-xs);
+}
+
+span.tag {
+	font-weight: var(--type-regular);
+	padding: var(--shape-xs) var(--shape-sm);
+	border-radius: 50px;
+	border: 1px solid var(--color-border-tag);
+	background: var(--color-background-tint);
+	color: var(--color-foreground);
 }
 
 /* ul */
 ul {
 	display: flex;
 	flex-direction: column;
-	gap: var(--grid-gap-list)
+	gap: var(--shape-sm);
 }
 
 /* divider */
@@ -189,15 +211,13 @@ ul {
 	background: var(--color-foreground);
 }
 
+/* paragraph */
+p {
+	text-wrap: balance;
+}
+
 
 /* responsive */
-@media screen and (max-width: 425px) {
-	
-}
+@media screen and (max-width: 425px) {}
 
-@media screen and (max-width: 768px) {
-	.btn-outline {
-		width: -moz-fit-content;
-		width: fit-content;
-	}
-}
+@media screen and (max-width: 768px) {}

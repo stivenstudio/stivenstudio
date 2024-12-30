@@ -1,7 +1,7 @@
 import style from './header.module.css'
 
-import Accessibility from './accessibility'
-import Logo from './logo'
+import Accessibility from './components/accessibility'
+import Logo from './components/logo'
 
 export default function Header() {
 	return (

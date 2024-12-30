@@ -1,20 +1,9 @@
-import style from './page.module.css'
-
-import Header from '../components/header/header';
 import Hero from '../components/hero/hero';
-import Projects from '../components/projects/projects';
-import Footer from '../components/footer/footer';
+import Projects from '../components/works/works';
 
 export default function App() {
-
-	return <main className={style.main}>
-
-		<div className={style.bg}></div>		
-
-		<Header />
+	return <>
 		<Hero />
 		<Projects />
-		<Footer />
-
-	</main>
+	</>
 }
