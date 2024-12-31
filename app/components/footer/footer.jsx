@@ -3,6 +3,9 @@ import Link from "next/link";
 import style from "./footer.module.css";
 
 export default function Footer() {
+
+	const year = new Date().getFullYear();
+	
 	return (
 		<footer>
 			<div className={style.footer_contact}>
@@ -16,7 +19,7 @@ export default function Footer() {
 			<div className={style.footer_social}>
 				<div className={style.footer_copyright}>
 					<div>
-						<span>© 2024 stivenstudio.</span>
+						<span>&copy; {year} stivenstudio.</span>
 						<span>—</span>
 						<span>All Rights Reserved.</span>
 					</div>
