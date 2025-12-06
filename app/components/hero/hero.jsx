@@ -1,3 +1,5 @@
+"use client";
+
 import style from "./hero.module.css";
 import CanvasThreeModel from "../canvas/CanvasThreeModel";
 import HeroContent from "./components/hero_content";
